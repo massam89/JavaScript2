@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'clock';
+  src: url('digital-7.ttf');
+}
+
+body{
+  font-size: 14px;
+  background-color: aqua;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+}
+
+#app{
+  min-width: 300px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  background-color: darkcyan;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+h1{
+  font-size: 2.3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background-color: rgb(33, 184, 139);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.session-length-box{
+  margin-bottom: 10px;
+}
+
+.session-length-box h2{
+  font-size: 1.7rem;
+}
+
+.session-length {
+  font-size: 1.7rem;
+}
+
+.session-length span {
+  font-weight: 900;
+  
+}
+
+.session-box{
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 60%;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+#time{
+  font-family: clock;
+  font-size: 4rem;
+}
+
+.button i {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+i{
+  cursor: pointer;
+}
+
+i:hover{
+  color: orange;
+}
+
+i:active{
+  color: red;
+}
+

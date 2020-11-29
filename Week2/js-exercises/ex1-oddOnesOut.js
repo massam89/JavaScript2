@@ -19,3 +19,12 @@ function doubleEvenNumbers(numbers) {
 
 const myNumbers = [1, 2, 3, 4];
 console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console
+
+
+//Using map and filter
+
+const doubleEvenNumbers2 = myNumbers
+  .filter(number => number % 2 == 0)
+  .map(number => number * 2);
+
+console.log(doubleEvenNumbers2);
