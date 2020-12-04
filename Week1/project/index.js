@@ -50,6 +50,10 @@ let quoteNum = 0;
 button.addEventListener('click', changeQuote);
 
 function changeQuote() {
+  quote.classList.remove('transition');
+  setTimeout(() => {
+    quote.classList.add('transition');
+  }, 5)
   quote.textContent = quotes[quoteNum].quote;
   author.textContent = quotes[quoteNum].author;
   quoteNum++;
