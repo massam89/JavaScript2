@@ -19,3 +19,5 @@ const x = (function () {
 })();
 
 x();
+
+//Output is alert to brower number 12, change the value of a to 12 because a declares as a global variable.

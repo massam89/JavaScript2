@@ -15,7 +15,7 @@ function f1(val) {
   return val;
 }
 f1(x);
-console.log(x);
+console.log(f1(x));
 
 const y = {
   x: 9
@@ -26,4 +26,6 @@ function f2(val) {
   return val;
 }
 f2(y);
-console.log(y);
+console.log(f2(y));
+
+// In this example, x has 2 parts, one of them is varible and the other is property of object y

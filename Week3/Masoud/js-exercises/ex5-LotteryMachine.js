@@ -29,10 +29,41 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
   // make array
+  if (startIndex > stopIndex) {
+    console.log('Change the values: The stop number should be greater than start number')
+  } else {
+    let pointer = startIndex;
+    for (let i = 0; i < stopIndex - startIndex + 1; i++) {
+      numbers.push(pointer);
+      pointer++;
+    }
+  }
   // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+  numbers.forEach(function (arr) {
+    if (arr % 3 == 0 && arr % 5 == 0) {
+      threeCallback(arr);
+      fiveCallback(arr);
+    } else if (arr % 5 == 0) {
+      fiveCallback(arr);
+    } else if (arr % 3 == 0) {
+      threeCallback(arr);
+    } else {
+      console.log('number ' + arr + ' is not divisible by 3 or 5');
+    }
+  })
+
+
 }
 
-threeFive(10, 15, sayThree, sayFive);
+threeFive(1, 10, sayThree, sayFive);
 
 // Should create an array [10,11,12,13,14,15]
 // and call sayFive, sayThree, sayThree, sayFive
+
+function sayThree(arr) {
+  console.log('Number ' + arr + ' is divisible by 3');
+}
+
+function sayFive(arr) {
+  console.log('Number ' + arr + ' is divisible by 5');
+}
