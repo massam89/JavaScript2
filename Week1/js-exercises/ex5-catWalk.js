@@ -26,7 +26,7 @@ function app() {
       clearInterval(walking);
       catImg.src = 'tenor.gif';
       setTimeout(() => {
-        catImg.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+        catImg.src = './cat-walk.gif';
         point++;
         app();
       }, 5000);
