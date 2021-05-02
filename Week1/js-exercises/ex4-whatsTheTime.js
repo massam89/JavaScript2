@@ -10,15 +10,15 @@
   4. Have the function execute when it 's loading in the browser
 
  */
+const timeP = document.createElement('p');
 
 function displayCurrentTime() {
   // your code goes in here
- const now = new Date();
- console.log(now);
-const timeP = document.createElement('p');
-timeP.innerText = `${now.getHours()} : ${now.getMinutes()} : ${now.getSeconds()}`;
-document.body.appendChild(timeP);
-
+  const now = new Date();
+  timeP.innerText = `${now.getHours()} : ${now.getMinutes()} : ${now.getSeconds()}`;
+  document.body.appendChild(timeP);
+  timeP.style.textAlign = 'center';
+  timeP.style.fontSize = '24px'
 }
 
 setInterval(displayCurrentTime, 1000);
